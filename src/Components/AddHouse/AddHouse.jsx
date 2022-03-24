@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { axios } from "axios";
+import { Axios } from "axios";
 
 export const AddHouse = () => {
 
@@ -16,7 +16,7 @@ export const AddHouse = () => {
   const handleSubmit=(e)=>{
     e.preventDefault()
     // console.log(formData)
-    axios.post('http://localhost:8080/houses',formData)
+    Axios.post('http://localhost:8080/houses',formData)
   }
   
   
